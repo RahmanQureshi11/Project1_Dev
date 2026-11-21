@@ -1,0 +1,9 @@
+---
+- name: Restarting sshd
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: restarting sshd
+      service:
+        name: sshd
+        state: restarted
