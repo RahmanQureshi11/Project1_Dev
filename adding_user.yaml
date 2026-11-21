@@ -1,0 +1,9 @@
+---
+- name: adding a new user
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Adding a new user
+      user:
+        name: saba_dev_1
+        state: present
